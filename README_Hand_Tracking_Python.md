@@ -1,67 +1,30 @@
+# Hand Tracker
 
-# Proyek Hand Tracking Menggunakan Python
+**Deskripsi**: Hand Tracker adalah proyek yang memanfaatkan framework Mediapipe dari Google untuk mendeteksi dan melacak posisi tangan secara real-time. Proyek ini diprogram dalam Python dan dirancang untuk memberikan kemudahan dalam memasukan input pelacakan tangan ke dalam aplikasi.
 
-Proyek **Hand Tracking** ini menggunakan Python untuk mendeteksi dan melacak posisi tangan secara real-time melalui webcam atau video input. Proyek ini cocok untuk aplikasi interaksi manusia-komputer (HCI), game berbasis gerakan, kontrol gestur, dan berbagai aplikasi yang memerlukan pelacakan tangan.
+## Fitur Utama
 
-## Fitur
-
-### 1. **Deteksi Tangan**
-   - Deteksi tangan secara real-time menggunakan model machine learning.
-   - Penentuan posisi landmark utama di tangan seperti jari dan pergelangan tangan.
-
-### 2. **Pelacakan Gerakan**
-   - Pelacakan gerakan tangan dengan frame rate tinggi.
-   - Melacak posisi jari, posisi telapak tangan, dan arah gerakan.
-
-### 3. **Gestur Tangan**
-   - Deteksi berbagai gestur tangan seperti jempol ke atas, jari menunjuk, dan tanda OK.
-   - Memungkinkan kustomisasi untuk mendeteksi gestur tertentu yang dibutuhkan oleh aplikasi.
-
-### 4. **Integrasi Webcam**
-   - Menggunakan webcam sebagai input untuk pelacakan tangan secara langsung.
-   - Mendukung input video untuk analisis pasca proses.
-
-### 5. **Interaksi Real-Time**
-   - Menghubungkan hasil pelacakan tangan dengan aplikasi lain untuk interaksi real-time.
-   - Cocok untuk kontrol berbasis gerakan atau antarmuka virtual tanpa sentuhan.
+- **Deteksi Tangan**: Menggunakan algoritma canggih dari Mediapipe untuk mendeteksi tangan dan posisi jari secara akurat.
+- **Antarmuka Sederhana**: Menyediakan wrapper Python yang mudah digunakan, memungkinkan pengembang dengan berbagai tingkat pengalaman untuk menerapkannya.
+- **Real-Time Processing**: Dapat memproses data video secara langsung, memberikan umpan balik instan.
 
 ## Persyaratan
 
-- Python 3.x
-- OpenCV (untuk menangkap video dan gambar dari webcam)
-- MediaPipe (untuk deteksi dan pelacakan tangan)
-- NumPy (untuk pemrosesan array dan data gambar)
+Sebelum memulai, pastikan Anda memiliki paket berikut terinstal:
 
-## Instalasi
+- `numpy`: Untuk operasi numerik.
+- `opencv`: Untuk pemrosesan gambar.
+- `tensorflow`: Untuk pembelajaran mesin.
+- `jupyter` dan `matplotlib`: Jika ingin menjalankan demo interaktif.
 
-1. **Clone Repositori:**
-   ```bash
-   git clone https://github.com/username/hand-tracking-python.git
-   cd hand-tracking-python
-   ```
+## Cara Kerja
 
-2. **Install Dependencies:**
-   Anda dapat menginstal pustaka yang diperlukan dengan perintah berikut:
-   ```bash
-   pip install opencv-python mediapipe numpy
-   ```
+Proyek ini melibatkan pengunduhan model yang diperlukan dan penggunaan skrip untuk menjalankan deteksi tangan. Pengguna dapat mengeksekusi aplikasi dengan mudah, mengikuti petunjuk setup yang disediakan.
 
-3. **Jalankan Program:**
-   Setelah dependensi terinstal, jalankan skrip utama untuk mulai melacak tangan:
-   ```bash
-   python hand_tracking.py
-   ```
+## Kesimpulan
 
-## Penggunaan
+Hand Tracker adalah alat yang berguna bagi pengembang dan peneliti yang ingin mengeksplorasi interaksi berbasis gerakan. Dengan kemudahan penggunaan dan kemampuan real-time, proyek ini membuka banyak peluang untuk aplikasi inovatif.
 
-Setelah program dijalankan, webcam akan terbuka dan mendeteksi tangan secara otomatis. Pada tampilan video, Anda akan melihat titik-titik landmark pada jari dan telapak tangan yang dihasilkan oleh model deteksi.
 
-Anda bisa menyesuaikan kode untuk mendeteksi gestur tertentu atau untuk menghubungkan pelacakan tangan dengan aplikasi lain seperti game atau antarmuka virtual.
-
-## Kontribusi
-
-Jika Anda ingin berkontribusi pada proyek ini, silakan fork repositori ini, buat fitur baru di branch terpisah, dan kirimkan pull request.
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah MIT License. Silakan baca berkas `LICENSE` untuk detail lebih lanjut.
+## Source
+https://github.com/wolterlw/hand_tracking
